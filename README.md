@@ -1,5 +1,7 @@
 # Docker-compose Mysql + Flask
 
+### docker-compose.yml
+
 ```yaml
 services:
   db:
@@ -23,4 +25,10 @@ services:
     restart: always
     ports:
       - 2000:5000
+```
+
+### docekr compose up
+
+```
+$ docker-compose up -d
 ```
