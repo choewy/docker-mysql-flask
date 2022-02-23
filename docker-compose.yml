@@ -13,10 +13,10 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
 
-  flask:
+  app:
     depends_on:
       - db
     build: ./src/
     restart: always
     ports:
-      - 5000:5000
+      - 2000:5000
